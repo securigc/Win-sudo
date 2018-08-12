@@ -1,20 +1,25 @@
-# Win-sudo
-Emulated sudo command to elevate (Run As Administrator) cmd and or applications via UAC.
-## How To Use
-Simply download and place `sudo.bat` into your `system32` folder.
+# Win-sudo (For Powershell
+Forked from the original Win-sudo, <b> originally created by jamestel </b> - this version will allow you to quickly switch into an elevated Powershell instance. (Oh and also run powershell scripts as Administrator)
 
-* Simply using `sudo` will create a new elevated cmd window unlike the true UNIX sudo.
+"Emulated sudo command to elevate (Run As Administrator)" PowerShell and or applications via UAC."
+ 
+## How To Use
+Simply download and place `su.bat` into your `ToBeConfirmed` folder.
+
 * Unlimited arguments are supported when lauching an elevated application or script.
 
 #### Examples:
 ```
-sudo notepad worlddom.txt
+su test.ps1
 ```
 
 ```
-sudo sndvol
+su test.ps1 -t -w -192 etc
 ```
 
 ```
-sudo "C:\Program Files\MySQL\MySQL Server\bin\mysql.exe"
+su test.ps1 -t -w -192 etc
+```
+```
+su "C:\Users\Username\Test\test.ps1" -v
 ```
